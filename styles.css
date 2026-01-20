@@ -34,9 +34,9 @@ div#caja-central {
 }
 
 header h1 {
+    font-size: 3em;
     color:lightgreen;
     text-shadow: 3px 3px 5px black;
-    font-size: 3em;
 }
 
 header h2 {
@@ -65,15 +65,12 @@ section h1.titulo {
 }
 
 #contenedor-quienes #imagen {
-    width: 50%;
-    text-align: center;
-}
-
-#contenedor-quienes #imagen {
     background-image: url(images/equipo.jpg);
     background-size: cover;
     background-position: center;
     min-height: 300px;
+    width: 50%;
+    text-align: center;
 }
 
 #quienes-somos {
@@ -97,6 +94,7 @@ section#clientes-satisfechos {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-content:center
 }
 
 
@@ -129,4 +127,93 @@ footer .caja {
     width: 33%;
     padding: 10px;
     text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    #contenedor-quienes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contenedor-quienes #imagen {
+        width: 100%;
+    }    
+    
+    #contenedor-quienes #info {
+        width: 100%;
+        padding: 0;
+        text-align: center;   
+    }
+
+    #contenedor-quienes #info h1 {
+        padding-top: 15px;
+    }
+
+    #contenedor-clientes {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around
+    }
+
+    .cliente {
+        width: 40%;
+        text-align: center;
+    }
+        
+}
+
+@media screen and (max-width: 480px) {
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    #contenedor-quienes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contenedor-quienes #imagen {
+        width: 100%;
+    }
+
+    #contenedor-quienes #info {
+        width: 100%;
+        padding: 0;
+    }
+
+    #contenedor-quienes #info h1 {
+        padding-top: 15px;
+    }
+
+    #contenedor-clientes {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .cliente {
+        padding-top: 10px;
+        width: 80%;
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .caja {
+        width: 100%;
+    }
+    
 }
