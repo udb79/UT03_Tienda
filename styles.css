@@ -152,6 +152,7 @@ footer .caja {
 
     #contenedor-quienes #info h1 {
         padding-top: 15px;
+        font-size: 1.5em;
     }
 
     #contenedor-clientes {
@@ -163,6 +164,10 @@ footer .caja {
     .cliente {
         width: 40%;
         text-align: center;
+    }
+
+    footer .caja h2 {
+        font-size: 1.25em;
     }
         
 }
@@ -194,6 +199,7 @@ footer .caja {
 
     #contenedor-quienes #info h1 {
         padding-top: 15px;
+        font-size: 1em;
     }
 
     #contenedor-clientes {
@@ -214,6 +220,10 @@ footer .caja {
 
     footer .caja {
         width: 100%;
+    }
+
+    footer .caja h2 {
+        font-size: 1em;
     }
     
 }
